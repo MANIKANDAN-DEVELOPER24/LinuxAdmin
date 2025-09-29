@@ -321,7 +321,7 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'service_kebclv1', // ✅ your EmailJS Service ID
+        'service_6djs9sp', // ✅ your EmailJS Service ID
         'template_baytisl', // ✅ your EmailJS Template ID (no space!)
         {
           name: formData.name,
@@ -330,7 +330,7 @@ const Contact = () => {
           service: formData.service,
           message: formData.message,
         },
-        'crZRUHf8T-sVPclaN' // ✅ your EmailJS Public Key
+        'IdKD8U7gVFN6QG8JN' // ✅ your EmailJS Public Key
       );
 
       setIsSubmitted(true);
