@@ -28,17 +28,17 @@ const Contact = () => {
     try {
       // Replace these with your actual EmailJS credentials
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_kebclv1', // Replace with your EmailJS service ID
+        ' template_baytisl', // Replace with your EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           company: formData.company,
           service: formData.service,
           message: formData.message,
-          to_email: 'your-email@example.com', // Replace with your email
+          to_email: 'humarousmani@gmail.com', // Replace with your email
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'crZRUHf8T-sVPclaN' // Replace with your EmailJS public key
       );
 
       setIsSubmitted(true);
