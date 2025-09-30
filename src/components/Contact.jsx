@@ -27,8 +27,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'service_6djs9sp', // ✅ your EmailJS Service ID
-        'template_baytisl', // ✅ your EmailJS Template ID (no space!)
+        'service_6djs9sp', // ✅ EmailJS Service ID
+        'template_baytisl', // ✅ EmailJS Template ID (no space!)
         {
           name: formData.name,
           email: formData.email,
@@ -36,7 +36,7 @@ const Contact = () => {
           service: formData.service,
           message: formData.message,
         },
-        'IdKD8U7gVFN6QG8JN' // ✅ your EmailJS Public Key
+        'IdKD8U7gVFN6QG8JN' // ✅ EmailJS Public Key
       );
 
       setIsSubmitted(true);
