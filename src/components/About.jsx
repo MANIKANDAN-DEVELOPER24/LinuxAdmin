@@ -92,7 +92,7 @@ const About = () => {
 
                   {/* PDF Viewer */}
                   <iframe
-                    src="/resume.pdf"
+                    src={`${import.meta.env.BASE_URL}resume.pdf`}
                     className="w-full h-full rounded-lg"
                     title="Resume"
                   />
